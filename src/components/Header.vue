@@ -2,13 +2,14 @@
   <div id="header" class="px-0 text-center justify-content-between d-flex shadow bg-white col-12">
     <div class="header-search w-50">
       <div class="input-group bg-light w-100 rounded my-10">
-        <i _ngcontent-gdu-c7 class="fa fa-search"></i>
+        <i _ngcontent-gdu-c7 class="fa fa-search" />
         <input
           type="search"
           class="form-control form-search rounded"
           placeholder="Tra cứu đơn hàng"
           aria-label="Search"
           aria-describedby="search-addon"
+          style="padding-left: 40px"
         />
       </div>
     </div>
