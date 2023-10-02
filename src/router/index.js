@@ -19,6 +19,11 @@ const router = createRouter({
       component: () => import('../views/OrderView.vue')
     },
     {
+      path: '/order/nhap-excel',
+      name: 'nhap-excel',
+      component: () => import('../views/ExcelView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

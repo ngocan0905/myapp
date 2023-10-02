@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <!-- <h1>Sidebar</h1> -->
-    <div class="logo-viet bg-white">
+    <div class="logo-viet">
       <a href="">
         <img src="../assets/img/vietpost.png" width="200px" height="108px" alt="" />
       </a>
@@ -15,11 +15,23 @@
             <span class="span-sidebar ml-4">Trang chủ</span>
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link :to="{ name: 'tao-don-le' }" class="nav-link d-flex" href="#">
+        <li class="nav-item" @click="toggle">
+          <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
             <span class="span-sidebar ml-4">Tạo đơn</span>
+          </a>
+        </li>
+        <li class="nav-item" v-if="orderIsOpen">
+          <router-link :to="{ name: 'tao-don-le' }" class="nav-link d-flex bg-secondary" href="#">
+            <!-- <div class="logo-nav-item"> -->
+            <span class="span-sidebar ml-4">Tạo đơn lẻ</span>
+          </router-link>
+        </li>
+        <li class="nav-item" v-if="orderIsOpen">
+          <router-link :to="{ name: 'nhap-excel' }" class="nav-link d-flex bg-secondary" href="#">
+            <!-- <div class="logo-nav-item"> -->
+            <span class="span-sidebar ml-4">Nhập excel</span>
           </router-link>
         </li>
         <li class="nav-item">
@@ -68,3 +80,11 @@
     </nav>
   </div>
 </template>
+<script setup>
+import { ref } from 'vue'
+const orderIsOpen = ref(false)
+
+const toggle = () => {
+  orderIsOpen.value = !orderIsOpen.value
+}
+</script>
