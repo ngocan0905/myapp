@@ -2,9 +2,9 @@
   <div class="sidebar">
     <!-- <h1>Sidebar</h1> -->
     <div class="logo-viet">
-      <a href="">
-        <img src="../assets/img/vietpost.png" width="200px" height="108px" alt="" />
-      </a>
+      <router-link to="/"
+        ><img src="../assets/img/vietpost.png" style="height: 100px; padding-left: 40px" alt=""
+      /></router-link>
     </div>
     <nav id="sidebarMenu">
       <ul id="ul-sidebar" class="nav flex-column">
