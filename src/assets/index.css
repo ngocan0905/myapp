@@ -1,29 +1,49 @@
-body {
-  font-size: 14px !important;
-  font-family: arial, sans-serif;
-  background: #f6fafc;
+.header {
+  height: 64px;
+  padding: 0 27px;
 }
-#header {
-  min-height: 64px;
-  min-width: 320px;
-  /* padding: 0 27px; */
+.sidebar {
+  width: 240px;
+  border: #c2c2c2 solid 1px;
+  height: calc(100vh);
+  overflow: auto;
 }
-.nav-item {
-  /* width: 231px;
-    height: 64px; */
-  border-top: 1px solid #c2c2c2 !important;
-  width: 100%;
-  /* max-width: 240px; */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Chiều rộng thanh scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6; /* Màu của thanh thumb */
+  border-radius: 6px; /* Bo góc của thanh thumb */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Màu của track (phần nền) */
 }
 .nav-item a {
-  border-left: 2px solid #c2c2c2;
-  border-right: 2px solid #c2c2c2;
   padding: 20px 10px;
+  display: block;
   min-height: 60px;
+  text-align: left;
   color: #44494d;
+  width: 100%;
+  border-top: 1px solid #c2c2c2 !important;
+}
+.nav-item:nth-last-child(1) {
+  border-bottom: #c2c2c2 solid 1px;
+}
+.nav-item a:hover {
+  color: #ee0033;
 }
 .nav-item span {
   font-size: 14px;
+  height: 24px;
+  padding: 8px 0 0 25px;
+  font-family: Arial, sans-serif;
+}
+.nav-item img {
+  width: 20px;
+  margin-left: 5px;
 }
 .nav-item:active {
   background-color: transparent; /* Màu nền khi click (giống với màu nền mặc định) */
@@ -45,11 +65,11 @@ body {
 }
 
 .logo-viet {
-  display: flex;
-  /* Can giữa theo chiều ngang */
-  align-items: center; /* Can giữa theo chiều dọc */
-  height: 64px; /* Đặt chiều cao của khung chứa hình ảnh */
-  padding-left: 9px;
+  height: 64px;
+}
+.logo-viet img {
+  width: 200px;
+  padding: 0 0 0 15px;
 }
 .red-image {
   filter: hue-rotate(0deg); /* Màu đỏ */
@@ -69,44 +89,75 @@ body {
   opacity: 1; /* Firefox */
   font-size: 14px;
 }
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.form-search {
+.input-search {
+  width: 100%;
   box-shadow: none;
   border: none;
-  color: rgb(246, 248, 250);
-  margin-left: 0;
-  background-color: rgb(246, 248, 250) !important;
-  padding: 0 12px 0 45px;
+  color: rgb(153, 153, 153);
+  margin-left: 0px;
+  background: rgb(246, 248, 250);
+  padding: 0px 12px 0px 45px;
   font-size: 14px;
-  height: 45px;
+  height: 40px;
+  outline: none;
 }
-
-.form-control:focus {
-  box-shadow: 0 0 0 2px #f2f2f2;
-  border-color: #44494d !important;
+.input-search:focus {
+  border: #c2c2c2 solid 2px;
+}
+.input-group {
+  position: relative;
 }
 .input-group i.fa-search {
   position: absolute !important;
-  top: 50%;
   color: rgb(170, 170, 170);
-  transform: translateY(-50%);
-  left: 10px;
-  z-index: 100;
-  font-size: 20px;
+  top: 12px;
+  left: 12px;
+  font-size: 18px;
+  z-index: 9;
 }
+.fa {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1;
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* icon  */
+.notify {
+  position: relative;
+}
+.notify span:nth-child(1) {
+  height: 16px;
+  font-size: 14px;
+}
 .ico-notify {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 .num-not {
   position: absolute;
-  width: 6%;
-  top: 35%;
-  left: 38%;
-  height: 20px;
+  width: 20px;
+  height: 17px;
+  top: 17px;
+  right: 4px;
   font-family: 'MyVariableFont', sans-serif;
   background-color: #ee0033;
   border-radius: 50%;

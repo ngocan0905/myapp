@@ -17,15 +17,14 @@
               <img src="../assets/img/tienhang.svg" alt />
             </div>
             <span class="font-weight-bold fs-33 pr-5">TIỀN HÀNG</span>
-            <a class="fs-3" href>Xem chi tiết</a>
+            <a class="fs-33" href>Xem chi tiết</a>
           </div>
           <div class="col-md-4 form-group">
             <div class="card">
               <div class="card-body d-flex align-items-center justify-content-between">
                 <img
                   src="../assets/img/business-and-finance.svg"
-                  width="50px"
-                  height="50px"
+                  style="height: 50px"
                   class
                   alt="Ảnh"
                 />
@@ -41,8 +40,7 @@
               <div class="card-body d-flex align-items-center justify-content-between">
                 <img
                   src="../assets/img/business-and-finance.svg"
-                  width="50px"
-                  height="50px"
+                  style="height: 50px"
                   class
                   alt="Ảnh"
                 />
@@ -58,8 +56,7 @@
               <div class="card-body d-flex align-items-center justify-content-between">
                 <img
                   src="../assets/img/business-and-finance.svg"
-                  width="50px"
-                  height="50px"
+                  style="height: 50px"
                   class
                   alt="Ảnh"
                 />
@@ -78,7 +75,7 @@
                 <img src="../assets/img/thongkedonhang.svg" alt="" />
               </div>
               <span class="font-weight-bold fs-33 pr-5">THỐNG KÊ ĐƠN HÀNG</span>
-              <a class="fs-3" href>Xem chi tiết</a>
+              <a class="fs-33" href>Xem chi tiết</a>
             </div>
           </div>
           <div class="top_10 col-md-3"></div>

@@ -49,11 +49,11 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                       <img src="../assets/img/user-forward.svg" alt="" />
                       <span class="pt-1 pl-2 font-weight-bold">NGƯỜI GỬI</span>
                     </div>
-                    <div class="control-list-sender">
-                      <a href="">
+                    <div class="control-list-sender" style="cursor: pointer">
+                      <div href="">
                         <span class="txt-gray">Quản lý thông tin người gửi</span>
-                        <img class="mx-2" src="../assets/img/arrow-right.svg" alt=""
-                      /></a>
+                        <img class="mx-2" src="../assets/img/arrow-right.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                   <div class="card-body">
@@ -305,10 +305,10 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                       <span class="pt-1 pl-2 font-weight-bold">THÔNG TIN HÀNG HÓA</span>
                     </div>
                     <div class="control-list-sender">
-                      <a href="">
+                      <div>
                         <span class="txt-gray">Quản lý danh sách hàng hóa</span>
-                        <img class="mx-2" src="../assets/img/icon-arow-blue-right.svg" alt=""
-                      /></a>
+                        <img class="mx-2" src="../assets/img/icon-arow-blue-right.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                   <div class="card-body pt-1">
@@ -325,20 +325,22 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                           >LOẠI HÀNG HÓA</label
                         >
                       </div>
-                      <div class="input-group col-6">
-                        <div class="custom-check d-flex align-items-center">
-                          <input class="custom-radio-check" type="radio" id="customCheck111" />
-                          <label class="custom-check-label mb-0" for="customCheck111"
-                            >Bưu kiện</label
-                          >
+                      <div class="d-flex w-100">
+                        <div class="input-group col-6">
+                          <div class="custom-check d-flex align-items-center">
+                            <input class="custom-radio-check" type="radio" id="customCheck111" />
+                            <label class="custom-check-label mb-0" id="customCheck111"
+                              >Bưu kiện</label
+                            >
+                          </div>
                         </div>
-                      </div>
-                      <div class="input-group col-6">
-                        <div class="custom-check d-flex align-items-center">
-                          <input type="radio" id="customCheck111" />
-                          <label class="custom-check-label mb-0" for="customCheck111"
-                            >Bưu kiện</label
-                          >
+                        <div class="input-group col-6">
+                          <div class="custom-check d-flex align-items-center">
+                            <input type="radio" id="customCheck111" />
+                            <label class="custom-check-label mb-0" for="customCheck111"
+                              >Bưu kiện</label
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -365,21 +367,47 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                       </div>
 
                       <div class="col-10">
-                        <div class="row info-order">
-                          <div class="col-4 input-group">
-                            <a class="labelQty">
+                        <div class="info-order">
+                          <div
+                            class="col-4 input-group"
+                            style="
+                              padding: 0px 12px 0 40px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                              width: 197px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                            "
+                          >
+                            <div class="labelQty">
                               <img width="18px" height="14px" src="../assets/img/box.svg" alt="" />
                               <span class="text-danger">*</span>
-                            </a>
+                            </div>
                             <input
                               type="tel"
                               class="form-control form-reci pl-5"
                               id="phone"
                               placeholder="1"
+                              style="border: none"
                             />
                           </div>
-                          <div class="col-4 input-group">
-                            <a class="labelQty">
+                          <div
+                            class="col-4 input-group"
+                            style="
+                              padding: 0px 12px 0 40px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                              width: 197px;
+                              margin-left: 15px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                            "
+                          >
+                            <div class="labelQty">
                               <i
                                 _ngcontent-diq-c14=""
                                 class="fa fa-balance-scale"
@@ -389,17 +417,31 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                               ></i>
 
                               <span class="text-danger">*</span>
-                            </a>
+                            </div>
                             <input
                               type="tel"
                               class="form-control form-reci pl-25rem"
                               id="phone"
                               placeholder="Trọng lượng"
+                              style="border: none"
                             />
                             <a href="" class="gram">g</a>
                           </div>
-                          <div class="col-4 input-group">
-                            <a class="labelQty">
+                          <div
+                            class="col-4 input-group"
+                            style="
+                              padding: 0px 12px 0 40px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                              width: 197px;
+                              margin-left: 15px;
+                              position: relative;
+                              border: #c2c2c2 solid 1px;
+                              border-radius: 0.375rem;
+                            "
+                          >
+                            <div class="labelQty">
                               <i
                                 _ngcontent-diq-c14=""
                                 class="fa-solid fa-money-bill"
@@ -409,12 +451,13 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                               ></i>
 
                               <span class="text-danger">*</span>
-                            </a>
+                            </div>
                             <input
                               type="tel"
                               class="form-control form-reci pl-25rem"
                               id="phone"
                               placeholder="Giá trị hàng"
+                              style="border: none"
                             />
                             <a href="" class="gram">đ</a>
                           </div>

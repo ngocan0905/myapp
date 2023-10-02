@@ -2,9 +2,9 @@
   <div class="sidebar">
     <!-- <h1>Sidebar</h1> -->
     <div class="logo-viet">
-      <router-link to="/"
-        ><img src="../assets/img/vietpost.png" style="height: 100px; padding-left: 40px" alt=""
-      /></router-link>
+      <router-link to="/">
+        <img src="../assets/img/vietpost.png" style="height: 64px; object-fit: cover" alt="" />
+      </router-link>
     </div>
     <nav id="sidebarMenu">
       <ul id="ul-sidebar" class="nav flex-column">
@@ -12,17 +12,17 @@
           <router-link to="/" class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Trang chủ</span>
+            <span class="span-sidebar">Trang chủ</span>
           </router-link>
         </li>
         <li class="nav-item" @click="toggleOrder">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Tạo đơn</span>
+            <span class="span-sidebar">Tạo đơn</span>
           </a>
         </li>
-        <li class="nav-item" v-if="orderIsOpen">
+        <li class="nav-item" v-show="orderIsOpen">
           <router-link
             :to="{ name: 'tao-don-le' }"
             class="nav-link d-flex"
@@ -30,10 +30,10 @@
             href="#"
           >
             <!-- <div class="logo-nav-item"> -->
-            <span class="span-sidebar ml-4">Tạo đơn lẻ</span>
+            <span class="span-sidebar">Tạo đơn lẻ</span>
           </router-link>
         </li>
-        <li class="nav-item" v-if="orderIsOpen">
+        <li class="nav-item" v-show="orderIsOpen">
           <router-link
             :to="{ name: 'nhap-excel' }"
             class="nav-link d-flex"
@@ -41,54 +41,54 @@
             href="#"
           >
             <!-- <div class="logo-nav-item"> -->
-            <span class="span-sidebar ml-4">Nhập excel</span>
+            <span class="span-sidebar">Nhập excel</span>
           </router-link>
         </li>
         <li class="nav-item" @click="toggleManageIsOpen">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Quản lý</span>
+            <span class="span-sidebar">Quản lý</span>
           </a>
         </li>
         <router-link :to="{ name: 'manage-bill' }" v-show="manageIsOpen" class="nav-item">
           <a class="nav-link d-flex" href="#">
-            <span class="span-sidebar ml-4">Quản lý vận đơn</span>
+            <span class="span-sidebar">Quản lý vận đơn</span>
           </a>
         </router-link>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Tra cứu</span>
+            <span class="span-sidebar">Tra cứu</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Quản lý bán hàng</span>
+            <span class="span-sidebar">Quản lý bán hàng</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Tiện ích</span>
+            <span class="span-sidebar">Tiện ích</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Cài đặt tài khoản</span>
+            <span class="span-sidebar">Cài đặt tài khoản</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
-            <span class="span-sidebar ml-4">Hỏi đáp</span>
+            <span class="span-sidebar">Hỏi đáp</span>
           </a>
         </li>
       </ul>

@@ -1,68 +1,68 @@
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 hr {
-    width: 555px;
+  width: 555px;
 }
 .ml-6 {
-    margin-left: -6px;
+  margin-left: -6px;
 }
 img {
-    cursor: pointer;
+  cursor: pointer;
 }
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 .text-right {
-    text-align: right !important;
+  text-align: right !important;
 }
 label {
-    white-space: pre;
+  white-space: pre;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .btn-tools {
-    background: #fff;
-    box-shadow: 0 0 20px -1px #ddd;
-    color: #8d8d8d;
+  background: #fff;
+  box-shadow: 0 0 20px -1px #ddd;
+  color: #8d8d8d;
 }
 .custom-col-2 {
-    flex: 0 0 15.67% !important;
+  flex: 0 0 15.67% !important;
 }
 .custom-col-10 {
-    flex: 0 0 84.33% !important;
-    max-width: 100%;
+  flex: 0 0 84.33% !important;
+  max-width: 100%;
 }
 .table-create-order {
-    font-size: 14px;
+  font-size: 14px;
 }
 .setting button {
-    /* border-radius: 7px solid fff; */
-    border: none;
-    border-radius: 6%;
-    padding: 5px 7px;
-    margin: 0px 5px;
+  /* border-radius: 7px solid fff; */
+  border: none;
+  border-radius: 6%;
+  padding: 5px 7px;
+  margin: 0px 5px;
 }
 .setting span {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 .btn-lightt:hover {
-    background-color: rgba(181, 180, 180, 0.5);
+  background-color: rgba(181, 180, 180, 0.5);
 }
 
 .bg-gray {
-    background-color: rgba(0, 0, 0, 0.03) !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
 }
 .btn-lightt {
-    font-size: 14px;
+  font-size: 14px;
 }
 .bg-lightt {
-    background-color: rgb(248, 249, 250);
+  background-color: rgb(248, 249, 250);
 }
 .bootstrap-select {
-    border: 1px solid rgb(153, 153, 153) !important;
+  border: 1px solid rgb(153, 153, 153) !important;
 }
 /* .setting span{
     padding: 0px 10px;
@@ -71,25 +71,25 @@ a:hover {
     padding: 10px 0px;
 } */
 .note {
-    margin-left: 37%;
-    margin-top: 2%;
-    color: #dc3545 !important;
+  margin-left: 37%;
+  margin-top: 2%;
+  color: #dc3545 !important;
 }
 .tools-create {
-    justify-content: right;
+  justify-content: right;
 }
 .sender {
-    border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .border-drop {
-    border: 1px solid rgb(153, 153, 153) !important;
+  border: 1px solid rgb(153, 153, 153) !important;
 }
 .h147 {
-    height: 147px;
+  height: 147px;
 }
 /* /// nguoi nhận ------------------------------------------- */
 .receiver {
-    cursor: pointer;
+  cursor: pointer;
 }
 /* .custom-check .custom-check-label::before {
     border-radius: 50%;
@@ -113,160 +113,172 @@ a:hover {
     position: absolute;
 } */
 .address-reci .col-6 {
-    margin-bottom: 7%;
+  margin-bottom: 7%;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #ee0033;
-    border-color: #ee0033;
-    /* border: 1px solid red !important; */
+  background-color: #ee0033;
+  border-color: #ee0033;
+  /* border: 1px solid red !important; */
 }
 .custom-control-input + .custom-control-label::before {
-    border: 1px solid #ee0033 !important;
-    border-radius: 10%;
+  border: 1px solid #ee0033 !important;
+  border-radius: 10%;
 }
 .custom-checkbox .custom-control-input {
-    /* background-color: #ee0033; */
-    border-color: #ee0033 !important;
-    border: 1px solid red !important;
+  /* background-color: #ee0033; */
+  border-color: #ee0033 !important;
+  border: 1px solid red !important;
 }
 .custom-control-label {
-    padding-top: 2px;
-    cursor: pointer;
+  padding-top: 2px;
+  cursor: pointer;
 }
 .form-group input {
-    height: 35px;
+  height: 35px;
 }
 .prioritize a {
-    color: #44494d;
+  color: #44494d;
 }
 .txt-gray {
-    color: #44494d;
+  color: #44494d;
+  text-decoration: none;
 }
 .w-12-icon {
-    width: 12px;
+  width: 12px;
 }
 .list-input-group .input-group {
-    margin-bottom: 2%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
 }
 /* ///test-------------------------  */
 input[type='radio'] {
-    width: 17px;
-    background-color: red;
-    border: 1px solid red;
+  width: 17px;
+  background-color: red;
+  border: 1px solid red;
 }
 .custom-radio-check {
-    height: 35px;
+  height: 20px;
 }
 .custom-radio-check[type='radio']:checked + .custom-radio-label::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Kích thước radio button tùy chỉnh */
-    height: 20px; /* Kích thước radio button tùy chỉnh */
-    background-color: red; /* Màu nền cho radio button tùy chỉnh khi được chọn */
-    border-radius: 50%; /* Để tạo hình tròn */
-    border: 2px solid red; /* Viền đỏ cho radio button tùy chỉnh */
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Kích thước radio button tùy chỉnh */
+  height: 20px; /* Kích thước radio button tùy chỉnh */
+  background-color: red; /* Màu nền cho radio button tùy chỉnh khi được chọn */
+  border-radius: 50%; /* Để tạo hình tròn */
+  border: 2px solid rgb(154, 152, 173); /* Viền đỏ cho radio button tùy chỉnh */
 }
 .custom-radio-check:checked {
-    background: red;
+  background: yellow;
 }
 /* Ẩn radio button mặc định */
 .custom-radio-check[type='radio'] {
-    display: none;
+  display: none;
 }
 
 /* Tạo kiểu cho radio button tùy chỉnh */
 .custom-radio-check[type='radio'] + label::before {
-    content: '';
-    display: inline-block;
-    width: 20px; /* Kích thước radio button tùy chỉnh */
-    height: 20px; /* Kích thước radio button tùy chỉnh */
-    background-color: red; /* Màu nền cho radio button tùy chỉnh */
-    border-radius: 50%; /* Để tạo hình tròn */
-    border: 2px solid red; /* Viền đỏ cho radio button tùy chỉnh */
-    vertical-align: middle;
-    margin-right: 5px; /* Khoảng cách giữa radio button và văn bản */
+  content: '';
+  display: inline-block;
+  width: 20px; /* Kích thước radio button tùy chỉnh */
+  height: 20px; /* Kích thước radio button tùy chỉnh */
+  background: radial-gradient(circle, red 50%, white 50%, white 100%);
+
+  /* Màu nền cho radio button tùy chỉnh */
+  border-radius: 50%; /* Để tạo hình tròn */
+  border: 2px solid red; /* Viền đỏ cho radio button tùy chỉnh */
+  vertical-align: middle;
+  margin-right: 5px; /* Khoảng cách giữa radio button và văn bản */
 }
 
 /* Tạo kiểu cho radio button tùy chỉnh khi được chọn */
 .custom-radio-check[type='radio']:checked + label::before {
-    background-color: red; /* Màu nền cho radio button tùy chỉnh khi được chọn */
-    border: 2px solid red; /* Viền đỏ cho radio button tùy chỉnh khi được chọn */
+  background-color: red; /* Màu nền cho radio button tùy chỉnh khi được chọn */
+  border: 2px solid red; /* Viền đỏ cho radio button tùy chỉnh khi được chọn */
 }
 
 /* // hang hoa  */
 .labelQty {
-    position: absolute;
-    color: #aaa !important;
-    top: 8px;
-    left: 22px;
-    z-index: 100;
+  position: absolute;
+  color: #aaa !important;
+  top: 8px;
+  left: 22px;
+  z-index: 100;
 }
 .pl-25rem {
-    padding-left: 27%;
+  padding-left: 27%;
 }
 .gram {
-    position: absolute;
-    top: 8px;
-    right: 20px;
+  position: absolute;
+  top: 8px;
+  right: 20px;
 
-    color: #aaa;
+  color: #aaa;
 }
 /* /// btn -add  */
 .btn-add {
-    color: #ee0033 !important;
-    background-color: #fff;
-    border-color: #ee0033;
-    white-space: pre;
+  color: #ee0033 !important;
+  background-color: #fff;
+  border-color: #ee0033;
+  white-space: pre;
 }
 .text-color-viet {
-    color: #ee0033 !important;
+  color: #ee0033 !important;
 }
 .btn-add:hover {
-    background-color: rgba(181, 180, 180, 0.5);
+  background-color: rgba(181, 180, 180, 0.5);
 }
 .btn {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .exchange-order .form-control {
-    background-color: rgb(233, 236, 239);
-    opacity: 1;
+  background-color: rgb(233, 236, 239);
+  opacity: 1;
 }
 .input-group-text {
-    height: 35px;
-    border-left: none;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+  height: 35px;
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .w-test {
-    width: 124%;
+  width: 124%;
 }
 .flex .input-group label:hover {
-    cursor: pointer;
-    color: #ee0033;
+  cursor: pointer;
+  color: #ee0033;
 }
 textarea.form-control {
-    height: 55px !important;
+  height: 55px !important;
 }
 
 /* //excell ---------------------- */
 .title-header {
-    margin-left: 3%;
-    margin-top: 2%;
+  margin-left: 3%;
+  margin-top: 2%;
 }
 .btn:hover {
-    color: #f2f2f2;
-    text-decoration: none;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 .btn {
-    -webkit-transition: 0.2s linear;
-    transition: all 0.2s linear 0s;
-    outline: 0 !important;
+  -webkit-transition: 0.2s linear;
+  transition: all 0.2s linear 0s;
+  outline: 0 !important;
 }
 .excel-input {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    margin: 0px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0px 8px;
+}
+.info-order {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
