@@ -19,6 +19,11 @@ const router = createRouter({
       component: () => import('../views/OrderView.vue')
     },
     {
+      path: '/quan-ly-van-don',
+      name: 'manage-bill',
+      component: () => import('../views/ManageBillView.vue')
+    },
+    {
       path: '/order/nhap-excel',
       name: 'nhap-excel',
       component: () => import('../views/ExcelView.vue')

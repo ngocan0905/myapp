@@ -15,7 +15,7 @@
             <span class="span-sidebar ml-4">Trang chủ</span>
           </router-link>
         </li>
-        <li class="nav-item" @click="toggle">
+        <li class="nav-item" @click="toggleOrder">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
@@ -44,13 +44,18 @@
             <span class="span-sidebar ml-4">Nhập excel</span>
           </router-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="toggleManageIsOpen">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
             <img class src="../assets/img/pie-chart-gray.svg" alt="" />
             <span class="span-sidebar ml-4">Quản lý</span>
           </a>
         </li>
+        <router-link :to="{ name: 'manage-bill' }" v-show="manageIsOpen" class="nav-item">
+          <a class="nav-link d-flex" href="#">
+            <span class="span-sidebar ml-4">Quản lý vận đơn</span>
+          </a>
+        </router-link>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->
@@ -93,8 +98,11 @@
 <script setup>
 import { ref } from 'vue'
 const orderIsOpen = ref(false)
-
-const toggle = () => {
+const manageIsOpen = ref(false)
+const toggleOrder = () => {
   orderIsOpen.value = !orderIsOpen.value
+}
+const toggleManageIsOpen = () => {
+  manageIsOpen.value = !manageIsOpen.value
 }
 </script>
