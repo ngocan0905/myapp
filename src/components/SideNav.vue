@@ -23,13 +23,23 @@
           </a>
         </li>
         <li class="nav-item" v-if="orderIsOpen">
-          <router-link :to="{ name: 'tao-don-le' }" class="nav-link d-flex bg-secondary" href="#">
+          <router-link
+            :to="{ name: 'tao-don-le' }"
+            class="nav-link d-flex"
+            style="background: #d6d6d6"
+            href="#"
+          >
             <!-- <div class="logo-nav-item"> -->
             <span class="span-sidebar ml-4">Tạo đơn lẻ</span>
           </router-link>
         </li>
         <li class="nav-item" v-if="orderIsOpen">
-          <router-link :to="{ name: 'nhap-excel' }" class="nav-link d-flex bg-secondary" href="#">
+          <router-link
+            :to="{ name: 'nhap-excel' }"
+            class="nav-link d-flex"
+            style="background: #d6d6d6"
+            href="#"
+          >
             <!-- <div class="logo-nav-item"> -->
             <span class="span-sidebar ml-4">Nhập excel</span>
           </router-link>
