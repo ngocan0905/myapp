@@ -19,6 +19,11 @@ const router = createRouter({
       component: () => import('../views/OrderView.vue')
     },
     {
+      path: '/thong-ke-tien-hang',
+      name: 'static-order',
+      component: () => import('../views/StaticOrderView.vue')
+    },
+    {
       path: '/quan-ly-van-don',
       name: 'manage-bill',
       component: () => import('../views/ManageBillView.vue')

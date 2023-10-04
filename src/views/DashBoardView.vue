@@ -17,7 +17,9 @@
               <img src="../assets/img/tienhang.svg" alt />
             </div>
             <span class="font-weight-bold fs-33 pr-5">TIỀN HÀNG</span>
-            <a class="fs-33" href>Xem chi tiết</a>
+            <router-link :to="{ name: 'static-order' }" class="fs-33" href
+              >Xem chi tiết</router-link
+            >
           </div>
           <div class="col-md-4 form-group">
             <div class="card">
