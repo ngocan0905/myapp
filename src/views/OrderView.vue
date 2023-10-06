@@ -346,8 +346,8 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                     </div>
                     <hr />
                     <!-- // 2 -->
-                    <div class="form-group row">
-                      <div class="col-2 d-flex mt-2">
+                    <div class="form-group row" style="">
+                      <div class="col-2 mt-2">
                         <label for="">Tên hàng 1 <span class="text-danger">*</span></label>
                       </div>
                       <div class="col-10">
@@ -361,105 +361,77 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                       </div>
                     </div>
                     <!-- // 3  -->
-                    <div class="form-group row">
-                      <div class="col-2 d-flex mt-2">
+                    <div class="form-group row" style="background-color:">
+                      <div class="col-2 mt-2" style="">
                         <label for=""></label>
                       </div>
-
-                      <div class="col-10">
-                        <div class="info-order">
-                          <div
-                            class="col-4 input-group"
-                            style="
-                              padding: 0px 12px 0 40px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                              width: 197px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                            "
-                          >
-                            <div class="labelQty">
-                              <img width="18px" height="14px" src="../assets/img/box.svg" alt="" />
-                              <span class="text-danger">*</span>
+                      <div class="col-10" style="background-color:">
+                        <div class="info-order d-flex justify-content-between" style="">
+                          <div class="col-4 input-group" style="padding: 0 15px 0 0">
+                            <div style="border: red solid 1px; border-radius: 0.375rem">
+                              <div class="labelQty">
+                                <img
+                                  style="width: 18px; height: 14px"
+                                  src="../assets/img/box.svg"
+                                  alt=""
+                                />
+                                <span class="text-danger">*</span>
+                              </div>
+                              <input
+                                type="tel"
+                                class="form-control form-reci pl-5"
+                                id="phone"
+                                placeholder="1"
+                                style="border: none; padding: 0 20px 0 40px"
+                              />
                             </div>
-                            <input
-                              type="tel"
-                              class="form-control form-reci pl-5"
-                              id="phone"
-                              placeholder="1"
-                              style="border: none"
-                            />
                           </div>
-                          <div
-                            class="col-4 input-group"
-                            style="
-                              padding: 0px 12px 0 40px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                              width: 197px;
-                              margin-left: 15px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                            "
-                          >
-                            <div class="labelQty">
-                              <i
-                                _ngcontent-diq-c14=""
-                                class="fa fa-balance-scale"
-                                mattooltipclass="tool-tip"
-                                aria-describedby="cdk-describedby-message-6"
-                                cdk-describedby-host=""
-                              ></i>
+                          <div class="col-4 input-group" style="padding: 0">
+                            <div style="border: red solid 1px; border-radius: 0.375rem">
+                              <div class="labelQty" style="">
+                                <i
+                                  class="fa fa-balance-scale"
+                                  mattooltipclass="tool-tip"
+                                  aria-describedby="cdk-describedby-message-6"
+                                  cdk-describedby-host=""
+                                ></i>
 
-                              <span class="text-danger">*</span>
+                                <span class="text-danger">*</span>
+                              </div>
+                              <input
+                                type="tel"
+                                class="form-control form-reci pl-25rem"
+                                id="phone"
+                                placeholder="Trọng lượng"
+                                style="border: none; padding: 0 20px 0 40px"
+                              />
+                              <a href="" class="gram">g</a>
                             </div>
-                            <input
-                              type="tel"
-                              class="form-control form-reci pl-25rem"
-                              id="phone"
-                              placeholder="Trọng lượng"
-                              style="border: none"
-                            />
-                            <a href="" class="gram">g</a>
                           </div>
-                          <div
-                            class="col-4 input-group"
-                            style="
-                              padding: 0px 12px 0 40px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                              width: 197px;
-                              margin-left: 15px;
-                              position: relative;
-                              border: #c2c2c2 solid 1px;
-                              border-radius: 0.375rem;
-                            "
-                          >
-                            <div class="labelQty">
-                              <i
-                                _ngcontent-diq-c14=""
-                                class="fa-solid fa-money-bill"
-                                mattooltipclass="tool-tip"
-                                aria-describedby="cdk-describedby-message-7"
-                                cdk-describedby-host=""
-                              ></i>
+                          <div class="col-4 input-group" style="padding: 0 0 0 15px">
+                            <div
+                              style="border: red solid 1px; width: 100%; border-radius: 0.375rem"
+                            >
+                              <div class="labelQty">
+                                <i
+                                  _ngcontent-diq-c14=""
+                                  class="fa-solid fa-money-bill"
+                                  mattooltipclass="tool-tip"
+                                  aria-describedby="cdk-describedby-message-7"
+                                  cdk-describedby-host=""
+                                ></i>
 
-                              <span class="text-danger">*</span>
+                                <span class="text-danger">*</span>
+                              </div>
+                              <input
+                                type="tel"
+                                class="form-control form-reci pl-25rem"
+                                id="phone"
+                                placeholder="Giá trị hàng"
+                                style="border: none; padding: 0 20px 0 40px"
+                              />
+                              <a href="" class="gram">đ</a>
                             </div>
-                            <input
-                              type="tel"
-                              class="form-control form-reci pl-25rem"
-                              id="phone"
-                              placeholder="Giá trị hàng"
-                              style="border: none"
-                            />
-                            <a href="" class="gram">đ</a>
                           </div>
                         </div>
                       </div>

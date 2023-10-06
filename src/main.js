@@ -1,6 +1,7 @@
 import './assets/main.css'
 import './assets/order.css'
 import './assets/index.css'
+import './assets/order_sta.css'
 import './assets/bill_manage.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

@@ -60,8 +60,11 @@
                       placeholder="Tìm đơn hàng, số điện thoại"
                     />
                     <!-- <div class="input-group-append"> -->
-                    <button class="input-group-text position-relative p-17 btn btn-add bg-none">
-                      <i _ngcontent-exw-c12="" class="fa fa-search fs"></i>
+                    <button
+                      class="input-group-text position-relative btn btn-add"
+                      style="border: #ee0033 solid 1px; padding: 17px"
+                    >
+                      <i _ngcontent-exw-c12="" class="fa fa-search fs" style="color: #ee0033"></i>
                     </button>
                     <!-- </div> -->
                   </div>

@@ -55,12 +55,12 @@
             </div>
           </div>
         </div>
-        <div class="main-excel h-100 col-12 px-0">
-          <div class="excel-input bg-white">
+        <div class="main-excel h-100 col-12 px-0" style="padding: 0">
+          <div class="excel-input">
             <div class="card-body pt-2">
               <div class="row">
                 <div class="form-group col-7">
-                  <div class="dropdown">
+                  <div class="dropdown" style="margin: 0 0 16px; padding: 0 15px">
                     <button
                       class="btn border-drop bg-lightt btn-dropdown btn-lightt dropdown-toggle d-flex align-items-center justify-content-between"
                       type="button"
@@ -102,8 +102,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="form-group col-5">
-                  <div class="d-felx">
+                <div class="form-group col-5" style="">
+                  <div class="d-felx" style="padding: 0 15px">
                     <div class="float-left mt-2">
                       <span class="bold text-success font-weight-bold mr-3">Đơn hợp lệ: 0/0</span>
                       <span class="bold text-danger font-weight-bold mr-3">Đơn lỗi: 0/0</span>

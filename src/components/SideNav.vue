@@ -56,6 +56,11 @@
             <span class="span-sidebar">Quản lý vận đơn</span>
           </a>
         </router-link>
+        <router-link :to="{ name: 'static-order' }" v-show="manageIsOpen" class="nav-item">
+          <a class="nav-link d-flex" href="#">
+            <span class="span-sidebar">Thống kê tiền hàng</span>
+          </a>
+        </router-link>
         <li class="nav-item">
           <a class="nav-link d-flex" href="#">
             <!-- <div class="logo-nav-item"> -->

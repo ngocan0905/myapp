@@ -47,7 +47,7 @@
                   alt="Ảnh"
                 />
                 <div class="paid">
-                  <div class="card-text pl-1">Đã trả tiền</div>
+                  <div class="card-text pl-1">Chờ trả tiền</div>
                   <h4 class="font-weight-bold pl-5">0 ₫</h4>
                 </div>
               </div>
@@ -63,7 +63,7 @@
                   alt="Ảnh"
                 />
                 <div class="paid">
-                  <div class="card-text pl-1">Đã trả tiền</div>
+                  <div class="card-text pl-1">Chưa đối soát</div>
                   <h4 class="font-weight-bold pl-5">0 ₫</h4>
                 </div>
               </div>

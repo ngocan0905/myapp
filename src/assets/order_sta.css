@@ -1,0 +1,44 @@
+.border-none {
+  border: none;
+}
+.bigNumber {
+  font-size: 2em;
+  font-weight: 700;
+}
+.table-sta {
+  border: 1px solid rgb(222, 226, 230) !important;
+}
+.table-sta thead,
+.table-sta tbody tr {
+  border-bottom: 1px solid rgb(222, 226, 230) !important;
+}
+tr td a {
+  color: #72828b !important;
+}
+.table-sta tr:hover {
+  background-color: rgb(227, 240, 240);
+}
+
+.sta_order tr {
+  height: 56px;
+}
+.ball {
+  width: 10px;
+  height: 10px;
+  float: left;
+  border-radius: 5px;
+  margin: 4px 5px 0 0;
+}
+table.sta_order th {
+  text-align: left; /* Căn giữa ngang */
+  vertical-align: middle; /* Căn giữa dọc */
+  white-space: pre;
+}
+table.sta_order td {
+}
+.pr-tt {
+  padding-right: 10%;
+}
+.pl-tt {
+  padding-left: 4%;
+}
