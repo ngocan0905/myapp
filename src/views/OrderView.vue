@@ -336,7 +336,13 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
                         </div>
                         <div class="input-group col-6">
                           <div class="custom-check d-flex align-items-center">
-                            <input type="radio" id="customCheck111" />
+                            <input
+                              type="radio"
+                              class="input"
+                              name="color"
+                              value="red"
+                              style="margin-right: 6px"
+                            />
                             <label class="custom-check-label mb-0" for="customCheck111"
                               >Bưu kiện</label
                             >
@@ -889,3 +895,4 @@ import DefaultLayout from '../layouts/DefaultLayout.vue'
     </DefaultLayout>
   </main>
 </template>
+<style scoped></style>

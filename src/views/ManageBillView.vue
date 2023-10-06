@@ -1,58 +1,57 @@
 <template>
   <DefaultLayout
     ><div class="excel-online">
-      <div class="main-content">
-        <div class="d-flex justify-content-between">
-          <h4 class="title-header font-weight-bold">Quản lý vận đơn</h4>
-          <div class="d-flex title-header mr-5">
-            <div class="form-group">
-              <div class="dropdown">
-                <button
-                  class="btn w-order border-drop bg-lightt btn-dropdown btn-lightt dropdown-toggle d-flex align-items-center justify-content-between"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <div class="drop-item mr-4">Đơn hàng gửi</div>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <!-- Tạo thanh tìm kiếm bằng input -->
-                  <li>
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Tìm kiếm"
-                      aria-label="Search"
-                      id="dropdown-search"
-                    />
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mục 1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mục 2</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mục 3</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mục 4</a>
-                  </li>
-                </ul>
-              </div>
+      <div class="main-content" style="">
+        <div class="d-flex justify-content-between align-items-center row col-md-12 pt-2">
+          <div class="col-md-9"><h4 class="font-weight-bold ml-4">Quản lý vận đơn</h4></div>
+
+          <div class="form-group col-md-3">
+            <div class="dropdown mr-4">
+              <button
+                class="btn w-100 border-drop btn-dropdown dropdown-toggle d-flex align-items-center justify-content-between"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="drop-item mr-4">Đơn hàng gửi</div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- Tạo thanh tìm kiếm bằng input -->
+                <li>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Tìm kiếm"
+                    aria-label="Search"
+                    id="dropdown-search"
+                  />
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Mục 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Mục 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Mục 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Mục 4</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="main-excel h-100 col-12 px-0">
-          <div class="excel-input bg-white">
-            <div class="card-body pt-3">
+        <div class="main-excel col-12 px-0">
+          <div class="excel-input bg-white p-3">
+            <div class="card-body">
               <div class="row">
-                <div class="form-group col-3 exchange-order pr-0 d-flex">
-                  <div class="input-group col-12 px-0 w-test">
+                <div class="form-group col-xl-3 col-md-3">
+                  <div class="input-group px-0 w-test">
                     <input
                       type="tel"
                       class="form-control border-r-no bg-none form-reci"
@@ -69,16 +68,16 @@
                     <!-- </div> -->
                   </div>
                 </div>
-                <div class="form-group col-2 pl-10">
+                <div class="form-group col-xl-2 col-md-2">
                   <div class="calendar">
-                    <input type="date" />
+                    <input type="date" class="w-100 rounded-2 border border-secondary" />
                   </div>
                 </div>
 
-                <div class="form-group col-2">
+                <div class="form-group col-xl-2 col-md-3">
                   <div class="dropdown">
                     <button
-                      class="btn w-all-order border-drop bg-lightt btn-dropdown btn-lightt dropdown-toggle d-flex align-items-center justify-content-between"
+                      class="btn w-100 border-drop bg-lightt btn-dropdown dropdown-toggle d-flex align-items-center justify-content-between"
                       type="button"
                       id="dropdownMenuButton"
                       data-bs-toggle="dropdown"
@@ -115,10 +114,10 @@
                     </ul>
                   </div>
                 </div>
-                <div class="form-group col-2">
+                <div class="form-group col-xl-2 col-md-3">
                   <div class="dropdown">
                     <button
-                      class="btn w-all-order border-drop bg-lightt btn-dropdown btn-lightt dropdown-toggle d-flex align-items-center justify-content-between"
+                      class="btn w-100 border-drop bg-lightt btn-dropdown btn-lightt dropdown-toggle d-flex align-items-center justify-content-between"
                       type="button"
                       id="dropdownMenuButton"
                       data-bs-toggle="dropdown"
@@ -158,7 +157,7 @@
               </div>
             </div>
 
-            <div class="card-body pt-0">
+            <div class="card-body">
               <div class="row">
                 <div class="col-12">
                   <button class="btn btn-print mr-2">
@@ -185,11 +184,11 @@
                 </div>
               </div>
             </div>
+            <hr class="w-100 border border-danger" />
           </div>
         </div>
-      </div>
-    </div></DefaultLayout
-  >
+      </div></div
+  ></DefaultLayout>
 </template>
 <script setup>
 import DefaultLayout from '../layouts/DefaultLayout.vue'
